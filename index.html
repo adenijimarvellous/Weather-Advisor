@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather Advisor </title>
+    <meta name="description" content="Get real-time weather updates with smart advice." />
+    <meta name="keywords"
+        content="weather app, forecast, openweathermap, weather updates, weather conditions, smart weather, daily forecast, temperature, humidity, wind speed" />
+    <meta name="author" content="Marvellous Adeniji" />
+    <meta name="theme-color" content="#5563DE" />
+
+    <meta property="og:title" content="Weather Advisor" />
+    <meta property="og:description"
+        content="Check live weather, get location-based advice, and stay prepared for your day with Weather Advisor." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourweatheradvisor.com" />
+    <link rel="icon" type="image/png" href="assets/weather-icon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="weather-card">
+                <div class="search">
+                    <input type="text" id="city-input" placeholder="Enter city name..." />
+                    <button id="search-btn">🔍</button>
+                </div>
+
+
+                <div class="weather-info">
+                    <img id="weather-icon" src="assets/sunset.svg" alt="Weather Icon" />
+                    <h1 id="temp">--°C</h1>
+                    <h2 id="city">City</h2>
+                    <p id="weatherCondition">Condition</p>
+                </div>
+
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Checking weather...</p>
+                </div>
+
+
+                <div class="weather-details">
+                    <div class="col">
+                        <img src="assets/humidity.png" />
+                        <div>
+                            <p id="humidity">--%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="assets/wind.png" />
+                        <div>
+                            <p id="wind">--km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="advice" id="advice-text">
+                    Type a city name to get the wather.
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
