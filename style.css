@@ -141,3 +141,106 @@ body {
     font-size: 14px;
     opacity: 0.9;
 }
+
+        /* RESPONSIVENESS */
+/* TABLETS (≤ 900px) */
+@media (max-width: 900px) {
+    .weather-card {
+        padding: 25px;
+    }
+
+    .weather-info img {
+        width: 170px;
+    }
+
+    #temp {
+        font-size: 35px;
+    }
+
+    #city {
+        font-size: 22px;
+    }
+}
+
+/* PHONES (≤ 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .weather-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .search {
+        padding: 4px;
+    }
+
+    .search input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .search button {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .weather-info img {
+        width: 150px;
+    }
+
+    #temp {
+        font-size: 32px;
+    }
+
+    #city {
+        font-size: 20px;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .col {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .col img {
+        width: 40px;
+    }
+
+    #humidity,
+    #wind {
+        font-size: 16px;
+    }
+}
+
+/* SMALL PHONES (≤ 400px) */
+@media (max-width: 400px) {
+    .weather-card {
+        padding: 18px;
+    }
+
+    .weather-info img {
+        width: 130px;
+    }
+
+    #temp {
+        font-size: 28px;
+    }
+
+    #city {
+        font-size: 18px;
+    }
+
+    .search input {
+        font-size: 13px;
+    }
+}
